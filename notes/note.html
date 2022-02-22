@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYPRESS TURORAIL</title>
+</head>
+<body>
+<h1>*******************************************************</h1>
+<h1>  VIDO ONE - CYPRESS INTRODUCTION </h1> 
+<h1>*******************************************************</h1>
+<h2>what is cypress?what is cypress?</h2>
+<ul>
+    <li>next generation front end testing tool built for the modern web applications </li>
+    <li>uses javascript to write automation testing</li>
+    <li>built on node.js and comes packaged as an npm module</li>
+    <li>as its built on node.js,it uses javascirpt for writhing tests.but 90% of coding can be done using cypress built commands 
+        which are easy to understand</li>
+    <li>very simple wen comared to other tools</li>
+    <li>cpress is having different architecture when compared to seleniume.</li>
+    <li>we can write faster,easier and more relaible tests using cypress</li>
+</ul>
+<h2>selenium vs cypress architectural defferences</h2>
+<h1>*******************************************************</h1>
+<ol>
+    <li>selenium and other tools opeate by running outside of the browser and excuting remote commands across the network.</li>
+    <li>cypress engine directly operates inside the browser(the browser is exuting the test code).</li>
+    <li>cypress enables us to listen and modify the browser behavior at run time by manipulating DOM and altering network requests and responses</li>
+</ol>
+<h2>cypress ecosystem</h2>
+<h1>*******************************************************</h1>
+<h3>cypress is an open source tool and consits of two components</h3>
+<li>test Runner - helps to set up and start writing tests.</li>
+<li>Dashboard service (recording tests) - the dashboard provides insight into what happened when your tests ran.</li>
+
+<h2>how cypress is different than other tools</h2>
+<h1>*******************************************************</h1>
+<ul>
+    <li>cypress doesnt use selenium.</li>
+    <li>cypress focuses on doint end to end tsting well</li>
+    <li>cypress works on any front-end framework or websites.</li>
+    <li>cypress test are only written in javascript</li>
+    <li>cypress tests are only wirtten in javascirpt</li>
+    <li>cypress is all in one </li>
+    <li>cypress is for developers(unit testing and integration testing) and QA engineers(use for functionality and API testing)</li>
+    <li>cypress runs much faster</li>
+</ul>
+<h2>features of cypress</h2>
+<h1>*******************************************************</h1>
+<ul>
+    <li>Time travel  (take time snapshot which allow us to see each and every steps)</li>
+    <li>real time relods (automatic relodes wehen change is happen)</li>
+    <li>spies,stubs and clocks (verify and control funciton behaviour and server responces)</li>
+    <li>consistent results (stable and consistant result by directly contacting the browser)</li>
+    <li>debuggability (errors are more redable )</li>
+    <li>automatic waiting </li>
+    <li>network traffic control</li>
+    <li>screenshots and videos</li>
+</ul>
+<h3>you can see it on there official website.... cypress.io</h3>
+<h2>limitations of cypress</h2>
+<h1>*******************************************************</h1>
+<ol>
+    <li>support limited set of browsers like chrome,canary,electron</li>
+    <li>page object model is not supported</li>
+    <li>Tough to read data from files</li>
+    <li>third party reporting tool integration is limites.</li>
+</ol>
+<h1>*******************************************************</h1>
+<h1>VIDEO TWO -SETUP AND INSTALLATION OF CYPRESS</h1>
+<h1>*******************************************************</h1>
+<ol>
+    <li>Download Node and npm</li>
+    <li>set NODE_HOME Environment variables</li>
+    <li>Create Cypress working Folder</li>
+    <li>Generate package.json</li>
+    <li>Install cypress</li>
+    <li>Download visual studio code editor </li>
+</ol>
+<h1>*******************************************************</h1>
+<h1>VIDEO THREE - SETUP AND INSTALL IN MAC</h1>
+<h1>*******************************************************</h1>
+<ol>
+    <li>Download Node and npm</li>
+    <li>Create cypress workin gfolder</li>
+    <li>Generate package.json</li>
+    <li>Install Cypress</li>
+    <li>Download visual studio code editor</li>
+</ol>
+<h1>*******************************************************</h1>
+<h1>VIDEO FOUR - TEST Runner</h1>
+<h1>*******************************************************</h1>
+<ol>
+    <li>how to launch test runner in cypress?</li>
+    <li>explore sampel test in cypress
+        to lounch test the following command is done : npx cypress open</li>
+</ol>
+<h1>*******************************************************</h1>
+<h1>VIDEO FIVE - WRITING FIRST TEST CASE</h1>
+<h1>*******************************************************</h1>
+<ol>
+    <li>cypress use diffrent frame works but mainly it recommand using MOCHA frame worka nd it come along with cypress</li>
+    <li>describe contains the test suit and it contains test case adn all came from MOCHA</li>
+    <li>ALL testing is done inside integration Folder</li>
+</ol>
+<pre>describe('Test suit',function(){
+    it('test cases one',funciton()=>{
+     --- here we will write a test steps----
+    })
+    it('test cases two',funciton()=>{
+  --- here we will write a test steps----
+    })
+  })</pre>
+<h1>*******************************************************</h1>
+<h1>VIDEO SIX - RUN TESTS IN CYPRESS TEST RUNNER AND CYPRESS TERMINAL</h1>
+<h1>*******************************************************</h1>
+<p>we use : node_modules/.bin/cypress run</p>
+<pre>
+      when running the above command it will not open the browser and using electron browser we see everything in TERMINAL
+      and it will be running headless mode but if we weant to add head we can add the --headed syntax at the end
+      node_modules/.bin/cypress run  --headed  so by doing this it will lounch a brwoser and we can see everyting and
+      by default it will open in electron browser.if we want to change the browser we can select our broser also 
+      node_modules/.bin/cypress run --headed  --browser chrome
+</pre>
+<h2>To test a specific test we can do the following</h2>
+<p>node_module/.bin/cypress run -spec "directory of the test file relative path"</p>
+<p>example ;- node_module/.bin/cypress run -spec "cypress/integration/example/firstTest.js"</p>
+ <h1>*******************************************************</h1>   
+<h1>VIDEO SEVEN - FOLDER STRUCTRUE </h1>
+<h1>*******************************************************</h1>
+<img style="width: 500px;height: 500px;" src="./photo_2022-02-16_10-07-35.jpg" alt="">
+<h1>*******************************************************</h1>
+<h1>VIDEO EIGHT - LOCATING ELEMENTS</h1>
+<h1>*******************************************************</h1>
+<p>cy.get() -- is the method used to locat an element based on the selector we passed
+    it can use diffrent selectores like </p>
+                     <ol>
+                         <li>.class</li>
+                         <li>example </li>
+                         <li>#id</li>
+                         <li>[attribute=value]</li>
+                         <li>.class[attribute=value]</li>
+                     </ol>
+<h1>*******************************************************</h1>
+<h1>VIDEO NINE - LOCATINT ELEMENTS -DEMO</h1>
+<img style="width: 500px; height:500px;" src="./photo_2022-02-16_10-49-35.jpg" alt="">
+<p>here we did the example in mySecondTest.js</p>
+<h1>*******************************************************</h1>
+<h1>VIDEO TEN - Interacting with UI ELEMENTS</h1>
+<h1>*******************************************************</h1>
+<h3>UI ELEMENTS </h3>
+<ul>
+    <li>INPUT BOX</li>
+    <li>RADIO BUTTONS</li>
+</ul>
+<h3>commands</h3>  
+<ul>
+    <li>VISIT()</li>
+    <li> URL()</li>
+    <li>GET()</li>
+    <li> TITLE()</li>
+</ul>    
+<p>here we did the example in InputBoxAndRadioButton.js</p>
+<h1>*******************************************************</h1>
+<h1>VIDEO ELEVEN - UI ELEMENT CHECK BOX AND DROUP DOWNS</h1>
+<h1>*******************************************************</h1>
+<p>we did example on checkboxanddroupdown.js</p>
+<h1>*******************************************************</h1>
+<h1>VIDEO TWELVE - ALERT</h1>
+<h1>*******************************************************</h1>
+<p>we did example on alerthandeling.js</p>
+<h1>*******************************************************</h1>
+<h1>VIDEO THIRTY-GO()</h1>
+<h1>*******************************************************</h1>
+<p>go back and forward to the previous or next url in the browser's hisotry </p>
+<h1>*******************************************************</h1>
+<h1>VIDEO FOURTY - HANDELING TABLES</h1>
+<h1>*******************************************************</h1>
+<ul>
+    <li>check the value presence anywhere in the table. </li>
+    <li>check value presence in specific row and column</li>
+    <li>check value presence based on condition by iterating rows.</li>
+    <li> eg;- check the book name "Master in Java" whose author is Amod</li>
+</ul>
+<h1>*******************************************************</h1>
+<h1>VIDEO FIFTY - CYPRESS HOOKS</h1>
+<h1>*******************************************************</h1>
+<ul>
+    <li>before</li> 
+    <p> will run once before everthing start</p>
+    <li>after</li>
+    <p>will run once after everything is ended</p>
+    <li>beforeEach</li>
+    <p>will run before each test </p>
+    <li>afterEach</li>
+    <p>will run after each test</p>
+  
+</ul>
+<h3>example under hooks.js</h3>
+<h1>*******************************************************</h1>
+<h1>VIDEO SIXTY - CYPRESS FIXTURES</h1>
+<h1>*******************************************************</h1>
+<p>is a file which contains a data and that data is used in the test cases and the test is deriven by the data
+    the data can be diffrent type like json and so on </p>
+<p> and all fisture files should be present in the fixtures folder</p>
+<p>example under fixtures.js</p>
+<h1>*******************************************************</h1>
+<h1>VIDEO SEVENTY-CUSTOM COMMANDS</h1>
+<h1>*******************************************************</h1>
+<p>will allow you to build a custom command</p>
+<p>the command is written under support folder inside commands.js</p>
+<p>example under customCommand.js</p>
+<h1>*******************************************************</h1>
+<h1>VIDEO EIGHTY-PAGE OBJECT MODEL PATTERN</h1>
+<h1>*******************************************************</h1>
+<p>page object model is a design pattern where page objects are </p>
+<p>separated from Automation test scripts </p>
+<ul>
+    <h3>Advangates</h3>
+    <li>Reusability</li>
+    <li>Maintainablility</li>
+</ul>
+<h1>*******************************************************</h1>
+<h1>VIDEO NIGNTEEN-PAGE OBJECT MODEL PATTERN</h1>
+<h1>*******************************************************</h1>
+<ul>
+    <li>how to run cypress from the command line</li>
+    <li>how to specify whihc spec file to run</li>
+    <li>
+        <ul>
+            <h3>woring iwht dashbord features</h3>
+            <li>capture screenshots</li>
+            <li>recording</li>
+        </ul>
+    </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
